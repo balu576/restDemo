@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="restassuredtestsuite">
+	<listeners>
+		<listener class-name="com.employee.utilities.Listeners" />
+	</listeners>
+	<test thread-count="5" name="restassuredtests">
+		<classes>
+			<class name="com.employee.testcases.TC001_Get_All_Employees" />
+			<class name="com.employee.testcases.TC002_Get_Single_Employee_Record" />
+			<class name="com.employee.testcases.TC003_Post_Employee_Record" />
+			<class name="com.employee.testcases.TC004_Put_Employee_Record" />
+			<class name="com.employee.testcases.TC005_Delete_Employee_Record" />
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->
